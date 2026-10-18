@@ -54,3 +54,12 @@
             (local-set-key (kbd "TAB") 'tab-to-tab-stop)
             (local-set-key (kbd "<tab>") 'tab-to-tab-stop)))
 
+(add-hook 'c-mode-common-hook
+          (lambda ()
+            (c-set-offset 'substatement-open 0)))
+(add-hook 'c-mode-hook (lambda () (electric-indent-local-mode 1)))
+(add-hook 'c++-mode-hook (lambda () (electric-indent-local-mode 1)))
+(electric-pair-mode 1)
+
+
+
