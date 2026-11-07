@@ -306,9 +306,9 @@ stopping strictly at the beginning of the line."
 (define-key global-map [C-up] 'previous-blank-line)
 (define-key global-map [C-down] 'next-blank-line)
 
-(define-key c++-mode-map "\C-m" 'newline-and-indent)
+(define-key global-map "\C-m" 'newline-and-indent)
 
-(define-key c++-mode-map "\e/" 'c-mark-function)
+(define-key global-map "\e/" 'c-mark-function)
 
 ;; Jump to the beginning of the block (opening delimiter)
 (global-set-key (kbd "C-9") #'backward-up-list)
