@@ -285,6 +285,9 @@ stopping strictly at the beginning of the line."
 (define-key global-map "\en" 'next-error)
 (define-key global-map "\eN" 'previous-error)
 
+(global-set-key (kbd "C-n") #'flymake-goto-next-error)
+(global-set-key (kbd "C-N") #'flymake-goto-prev-error)
+
 (custom-set-variables
  '(imenu-auto-rescan t)
  '(imenu-auto-rescan-maxout 500000))
